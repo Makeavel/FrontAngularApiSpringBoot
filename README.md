@@ -8,7 +8,7 @@ Feito usando Angular(version 13.3.0) e se alimentando de dados de um Backend fei
 
 ## Rodando API
 
-## Rodando o Server
+## Run Server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
