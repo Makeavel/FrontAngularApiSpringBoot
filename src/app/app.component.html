@@ -1,0 +1,60 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page"></li>
+  </ol>
+</nav>
+<div class="container">
+
+  <div class="card add-contact">
+    <h5 class="card-header text-center">Adicionar | Editar Funcionário</h5>
+    <div class="card-body">
+        <form id="add-form" (ngSubmit)="f.form.valid && savecliente(f)" #f="ngForm" novalidate>
+          <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" [(ngModel)]="cliente.nome" id="nome" name="nome" #name="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && name.invalid }" placeholder="Digite o Nome">
+              <!-- <div *ngIf="f.submitted && name.invalid" class="invalid-feedback">
+                  <div *ngIf="f['name'].errors && f['name'].errors['required']">Name é obrigatório</div>
+              </div> -->
+          </div>
+          <div class="form-group">
+              <label for="cargo">Cargo</label>
+              <input type="text" [(ngModel)]="cliente.cargo" id="cargo" name="cargo" #email="ngModel" required class="form-control" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" placeholder="Digite o Cargo">
+              <!-- <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                  <div *ngIf="f['email'].errors && f['email'].errors['required']">Email é obrigatória</div>
+              </div> -->
+          </div>
+         
+          <button type="submit" class="btn btn-primary btn-add-contact">Salvar</button>
+          <button type="reset" class="btn btn-secondary btn-add-contact" (click)="cleanForm(f)">Cancelar</button>
+        </form>
+    </div>
+  </div>
+
+  <div class="card list-contact">
+    <h5 class="card-header text-center">Funcionários</h5>
+    <div class="card-body">
+      <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nome</th>
+              <th scope="col">Cargo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let cliente of clientes">
+              <td>{{cliente.id}}</td>
+              <td>{{cliente.nome}}</td>
+              <td>{{cliente.cargo}}</td>
+              <td>
+                <button type="button" class="btn btn-warning btn-sm" (click)="editcliente(cliente)">Editar</button>
+                <button type="button" class="btn btn-danger btn-sm ml-1" (click)="deletecliente(cliente)">Deletar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+ 
+</div>
