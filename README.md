@@ -1,4 +1,11 @@
-Aplicação front end em Angular para consumir a API de Contatos desenvolvida em SpringBoot disponível no link: https://github.com/gabri741/apiRESTspringBoot
+
+## API - FRONTEND
+
+Feito usando Angular e se alimentando de dados de um Backend feita em Java Spring Boot
+
+<p>O Backend dessa aplicação se encontra no repositório:  <a href="https://github.com/Makeavel/Api_SpringBoot">ApiSpringBoot</a> </p> 
+
+
 # AngularHttp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
