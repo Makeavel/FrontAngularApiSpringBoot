@@ -6,9 +6,7 @@ Feito usando Angular(version 13.3.0) e se alimentando de dados de um Backend fei
 <p>O Backend dessa aplicação se encontra no repositório:  <a href="https://github.com/Makeavel/Api_SpringBoot">ApiSpringBoot</a> </p> 
 
 
-## Rodando API
-
-## Run Server
+## Run API
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
