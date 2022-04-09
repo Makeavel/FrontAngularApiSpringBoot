@@ -1,7 +1,7 @@
 
 ## API - Frontend
 
-Feito usando Angular(version 13.3.0) e se alimentando de dados de um Backend feita em Java Spring Boot
+Feito usando Angular e se alimentando de dados de um BackEnd feita em Spring Boot
 
 <p>O Backend dessa aplicação se encontra no repositório:  <a href="https://github.com/Makeavel/Api_SpringBoot">ApiSpringBoot</a> </p> 
 
